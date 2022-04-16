@@ -19,5 +19,8 @@ public class Main {
 		CalculatorContext context = new CalculatorContext();
 		context.setCalculatorMethod(new Addition());
 		context.calculateResult(numbers);
+		System.out.println("----------------------------------------");
+		context.setCalculatorMethod(new Subtraction());
+		context.calculateResult(numbers);
 	}
 }
