@@ -6,9 +6,10 @@ public class CamionetaFord implements Camioneta{
         return "Ford";
     }
     public String getTipoTransporte() {
-        return "Auto";
+        return "Camioneta";
     }
     @Override
     public void Drive() {
+    System.out.println("Sonido Motor Camioneta Ford");
     }
 }

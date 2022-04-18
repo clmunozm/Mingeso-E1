@@ -9,6 +9,7 @@ public class CamionetaChevrolet implements Camioneta{
         return "Camioneta";
     }
     @Override
-    public void Drive() {
+    public void Drive(){
+        System.out.println("Sonido Motor Camioneta Chevrolet");
     }
 }
