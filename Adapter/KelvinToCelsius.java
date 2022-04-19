@@ -1,7 +1,5 @@
 package Adapter;
 
-import Adapter.TemperaturaKelvin;
-
 public class KelvinToCelsius extends TemperaturaCelsius{
     private TemperaturaKelvin temperatura;
     public KelvinToCelsius(TemperaturaKelvin temperatura){
