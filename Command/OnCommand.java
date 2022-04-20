@@ -1,13 +1,12 @@
 package Command;
 
-public class OnCommand extends CommandClass{
-
+public class OnCommand implements Command{
+    private Ampolleta ampolleta;
     public OnCommand(Ampolleta ampolleta){
-        super(ampolleta);
+        this.ampolleta = ampolleta;
     }
 
-    public Ampolleta execute() {
+    public void execute() {
         ampolleta.setEstado("On");
-        return ampolleta;
     }
 }

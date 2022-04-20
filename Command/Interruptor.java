@@ -1,11 +1,17 @@
 package Command;
 
-public class Interruptor {
-    
-    public Interruptor(){
+import java.util.ArrayList;
+import java.util.List;
 
+public class Interruptor {
+    private List<Command>commandList = new ArrayList<Command>(); 
+    public void takeOrder(Command command){
+        commandList.add(command);		
     }
-    public void Accionar(CommandClass command){
-        command.change();
+    public void accionar(){
+        for (Command command :commandList) {
+            command.execute();
+        }
+        commandList.clear();
     }
 }
